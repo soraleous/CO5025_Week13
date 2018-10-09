@@ -1,20 +1,785 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:id="@+id/content_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
+    tools:context="com.example.co5025.week13.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/Heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Sorting Methods Demo"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:id="@+id/Table1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp" >
 
-</android.support.constraint.ConstraintLayout>
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView1"
+                android:text="1"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView2"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView3"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView4"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView5"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView6"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView7"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView8"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView9"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView10"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView11"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView12"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView13"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView14"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView15"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView16"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView17"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView18"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView19"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView20"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView21"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView22"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView23"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView24"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView25"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView26"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView27"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView28"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView29"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView30"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView31"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView32"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView33"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView34"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView35"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView36"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView37"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView38"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView39"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView40"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView41"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView42"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView43"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView44"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView45"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView46"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView47"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView48"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView49"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView50"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView51"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView52"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView53"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView54"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView55"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView56"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView57"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView58"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView59"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView60"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView61"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView62"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView63"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView64"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView65"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView66"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView67"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView68"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView69"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView70"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView71"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView72"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView73"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView74"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView75"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView76"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView77"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView78"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView79"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView80"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView81"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView82"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView83"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView84"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView85"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView86"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView87"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView88"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView89"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView90"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView91"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView92"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView93"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView94"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView95"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView96"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView97"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView98"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView99"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView100"
+                style="@style/cell"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp" >
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView101"
+                android:text="1"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView102"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView103"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView104"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView105"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView106"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView107"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView108"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView109"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView110"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView111"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView112"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView113"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView114"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView115"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView116"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView117"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView118"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView119"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView120"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView121"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView122"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView123"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView124"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView125"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView126"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView127"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView128"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView129"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView130"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView131"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView132"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView133"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView134"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView135"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView136"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView137"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView138"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView139"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView140"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView141"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView142"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView143"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView144"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView145"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView146"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView147"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView148"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView149"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView150"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView151"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView152"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView153"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView154"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView155"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView156"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView157"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView158"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView159"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView160"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView161"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView162"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView163"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView164"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView165"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView166"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView167"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView168"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView169"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView170"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView171"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView172"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView173"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView174"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView175"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView176"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView177"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView178"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView179"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView180"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView181"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView182"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView183"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView184"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView185"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView186"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView187"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView188"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView189"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView190"
+                style="@style/cell"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent" >
+            <TextView
+                android:id="@+id/TextView191"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView192"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView193"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView194"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView195"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView196"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView197"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView198"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView199"
+                style="@style/cell"/>
+            <TextView
+                android:id="@+id/TextView200"
+                style="@style/cell"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Table1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Reset"
+        android:textSize="25sp" />
+
+
+
+    <Button
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reset"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/reset"
+        android:text="Bubble"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/merge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reset"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/bubble"
+        android:text="Merge"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/merge"
+        android:layout_toRightOf="@+id/merge"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="Swaps:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tot_swaps"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/reset"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/label"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="25sp" />
+
+
+
+</RelativeLayout>
